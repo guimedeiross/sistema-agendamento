@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Troca de Óleo</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <section class="form-section">
+    <h1>Login</h1>
+
+    <div class="form-wrapper">
+      <form name="login" action="validarlogin" method="POST">
+        <div class="input-block">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required/>
+        </div>
+        <div class="input-block">
+          <label for="password">Password</label>
+          <input type="password" id="password" name="password" required/>
+        </div>
+        <button type="submit" class="btn-login">Login</button>
+      </form>
+      <button type="submit" class="btn-cadastrar" onclick="chamarCadastro()">Cadastre-se</button>
+    </div>
+  </section>
+  <script src="script.js"></script>
+</body>
+
+</html>
