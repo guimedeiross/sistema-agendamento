@@ -15,5 +15,11 @@ app.get('/cadastrar', (req, res) => {
     res.sendFile(__dirname + "/cadastro.html")
 })
 
+app.get('/calendario', (req, res) => {
+    res.sendFile(__dirname + "/calendario.html")
+})
+
 require('./cadastrarUser')(app)
 require('./validarLogin')(app)
+require('./cadastrarAgendamento')(app)
+require('./ListarAgenda')(app)

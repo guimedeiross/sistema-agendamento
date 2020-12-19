@@ -1,5 +1,3 @@
-const divResp = document.querySelector('#resp')
-
 document.cadastrarForm.onsubmit( async e => {
     e.preventDefault()
     const form = e.target

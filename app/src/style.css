@@ -66,8 +66,10 @@
     border-radius: 25px;
     margin: auto;
     padding: 7px;
+    cursor: pointer;
   }
   div .btn-cadastrar {
+    cursor: pointer;
     display: block;
     min-width: 120px;
     border: none;

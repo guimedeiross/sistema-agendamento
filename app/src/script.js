@@ -9,7 +9,11 @@ document.login.onsubmit = async e => {
         body: new URLSearchParams(data)
     }
     try {
-        await fetch(form.action, options)
+        const resp = await fetch(form.action, options)
+        const json = await resp.json()
+        if(json.validar == "ok") {
+            window.location.href = '/calendario'        
+        }
     } catch (e) {
         resultado.innerHTML = e
     }

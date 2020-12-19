@@ -15,7 +15,7 @@ module.exports = app => {
         if (!await bcrypt.compare(password, user.password))
             return res.status(400).send({ error: 'Invalid password' })
 
-        res.sendFile(__dirname + "/calendario.html")
+        return res.json({"validar":"ok"})
     }
 
     app.post('/validarlogin', validarLogin)
